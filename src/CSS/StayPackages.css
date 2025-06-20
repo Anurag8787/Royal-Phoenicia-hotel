@@ -1,0 +1,151 @@
+.stay-packages {
+  background: #fdf8f2;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.stay-heading {
+  font-size: 3rem;
+  font-family: 'Georgia', serif;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.package-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.package-card {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1 / 1; /* Makes it square and responsive */
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: scale(1.03);
+}
+
+.package-overlay {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  color: white;
+  padding: 30px 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.package-overlay h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.package-overlay .subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.season {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+.icon-btn {
+  font-size: 1rem;
+  padding: 8px 12px;
+}
+
+/* Tablet View */
+@media screen and (max-width: 768px) {
+  .stay-heading {
+    font-size: 2.2rem;
+  }
+
+  .package-card {
+    max-width: 90%;
+  }
+
+  .package-overlay h3 {
+    font-size: 1.1rem;
+  }
+
+  .package-overlay .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    font-size: 0.7rem;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  .stay-packages {
+    padding: 40px 20px;
+  }
+
+  .stay-heading {
+    font-size: 1.8rem;
+  }
+
+  .package-overlay {
+    padding: 20px 15px;
+  }
+
+  .package-overlay h3 {
+    font-size: 1rem;
+  }
+
+  .package-overlay .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 6px 14px;
+    font-size: 0.68rem;
+  }
+
+  .icon-btn {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+}

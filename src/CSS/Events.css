@@ -1,0 +1,138 @@
+.company-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #e0e4ea, #537896);
+  font-family: 'Georgia', serif;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: white;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.more-btn {
+  background: none;
+  border: 1px solid #999;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.more-btn:hover {
+  background-color: #1e3b5c;
+  color: white;
+}
+
+.scroll-box {
+  position: absolute;
+  top: 20px;
+  right: 50%;
+  transform: translateX(50%);
+  border: 1px solid #ccc;
+  padding: 10px 16px;
+  background-color: #f7f7f7;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .background-image {
+    width: 90%;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 13.5px;
+  }
+
+  .scroll-box {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .company-section {
+    padding: 30px 15px;
+  }
+
+  .background-image {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .card {
+    padding: 25px 15px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .more-btn {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+
+  .scroll-box {
+    font-size: 14px;
+    padding: 6px 12px;
+    top: 15px;
+  }
+}

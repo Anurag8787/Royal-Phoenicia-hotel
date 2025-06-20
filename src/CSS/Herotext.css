@@ -1,0 +1,91 @@
+.hero-text-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(230, 227, 227);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: 'Georgia', serif;
+  margin-top: 37%; /* Adjusted for better flow */
+}
+
+.hero-content {
+  max-width: 900px;
+  width: 100%;
+  color: #5a5a5a;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.hero-btn {
+  margin-top: 2rem;
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  border: 2px solid #999;
+  background: transparent;
+  color: #333;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #eee;
+  color: #000;
+}
+
+/* Tablet Screens (≤768px) */
+@media screen and (max-width: 768px) {
+  .hero-text-section {
+    padding: 3rem 1.5rem;
+    margin-top: 60%;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .hero-btn {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Screens (≤480px) */
+@media screen and (max-width: 480px) {
+  .hero-text-section {
+    padding: 3rem 1.5rem;
+    margin-top: 65%;
+  }
+
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+  }
+}

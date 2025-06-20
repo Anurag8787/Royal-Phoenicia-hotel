@@ -1,0 +1,135 @@
+.spa-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.spa-card {
+  flex: 1;
+  min-width: 300px;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facility-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.spa-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.spa-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  padding: 20px;
+  max-width: 80%;
+}
+
+.spa-content h2 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.spa-content h2 span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.spa-content p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #eee;
+}
+
+.spa-content button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.spa-content button:hover {
+  background-color: white;
+  color: #222;
+  transform: scale(1.1);
+}
+
+/* Tablet View */
+@media screen and (max-width: 768px) {
+  .spa-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .spa-card {
+    height: 80vh;
+  }
+
+  .spa-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .spa-content h2 span {
+    font-size: 2.3rem;
+  }
+
+  .spa-content p {
+    font-size: 0.95rem;
+  }
+
+  .spa-content button {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  .spa-card {
+    height: 70vh;
+  }
+
+  .spa-content {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .spa-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .spa-content h2 span {
+    font-size: 2rem;
+  }
+
+  .spa-content p {
+    font-size: 0.85rem;
+  }
+
+  .spa-content button {
+    font-size: 0.8rem;
+    padding: 8px 20px;
+  }
+}

@@ -1,0 +1,78 @@
+/* src/components/About.css */
+
+.about-section {
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  padding: 60px 100px;
+  color: #222;
+}
+
+.intro-text h1 {
+  font-size: 42px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  margin-bottom: 60px;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 30px;
+  }
+
+  .intro-text h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

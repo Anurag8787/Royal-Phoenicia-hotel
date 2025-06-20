@@ -1,0 +1,129 @@
+.feature-container {
+  background-size: cover;
+  background-position: center;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: all 0.5s ease-in-out;
+  margin: 2% 0;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.hero-slider1 {
+  width: 85%;
+  height: 700px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #eee;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  transition: transform 0.4s ease;
+  z-index: 10;
+}
+
+.feature-box:hover {
+  transform: translate(-50%, -50%) scale(1.03);
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  line-height: 2.2;
+  color: #333;
+}
+
+.feature-list li {
+  transition: color 0.3s ease;
+}
+
+.feature-list li:hover {
+  color: #d35400;
+}
+
+/* Tablet Devices */
+@media screen and (max-width: 768px) {
+  .feature-container {
+    padding: 30px 20px;
+  }
+
+  .hero-slider1 {
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .feature-box {
+    padding: 20px;
+    max-width: 90%;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+  }
+
+  .feature-list {
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+  .feature-box {
+    padding: 18px;
+    font-size: 14px;
+    transform: translate(-50%, -50%);
+  }
+
+  .feature-list {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .hero-slider1 {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .slide img {
+    height: auto;
+    max-height: 350px;
+  }
+}

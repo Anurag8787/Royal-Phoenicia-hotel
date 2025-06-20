@@ -1,0 +1,146 @@
+   /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  flex-wrap: wrap;
+  font-family: 'Georgia', serif;
+  background-color: transparent;
+  color: white;
+  position: relative;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Button */
+.menu-btn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu-button {
+  background-color: #013a91;
+  border: none;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #0250c5;
+}
+
+/* Rating Center Section */
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.year {
+  font-size: 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 11px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #fff;
+}
+
+.stars {
+  font-size: 20px;
+  color: gold;
+}
+
+/* Booking Button */
+.booking-btn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .menu-btn,
+  .booking-btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .rating {
+    order: -1;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .menu-button {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+
+  .stars {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Extra small devices (≤360px) */
+@media (max-width: 360px) {
+  .menu-button {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+
+  .stars {
+    font-size: 0.9rem;
+  }
+
+  .year {
+    font-size: 0.85rem;
+  }
+}        
